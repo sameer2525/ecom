@@ -21,7 +21,7 @@ setInterval(() => {
     sloganBar.textContent = slogans[currentSlogan];
     sloganBar.style.opacity = 1;
   }, 500);
-}, 5000);
+}, 3000);
 // =============================
  // Animate box on page load
  window.addEventListener('DOMContentLoaded', () => {

@@ -30,6 +30,11 @@ body {
     letter-spacing: 1px;
   }
 
+  img.logo{
+    width: 70px;
+    height: 70px;
+  }
+
   .nav-link {
     color: white !important;
     font-size: 15px;
@@ -254,6 +259,10 @@ filter: brightness(1.05);
 .product-info {
 padding: 20px;
 color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .product-info h5 {
@@ -266,6 +275,7 @@ margin-bottom: 10px;
 font-size: 14px;
 color: #ccc;
 }
+
 /* =====================review=============== */
 
 /* Testimonial Section Styles */
