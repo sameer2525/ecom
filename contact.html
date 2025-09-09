@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <meta name="google-site-verification" content="WZ-W5bGHf7AEvjmKoApG84cZ1C1qmICNWI4uA2yeWao" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">MadeForYou</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <i class="fas fa-bars"></i>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html"><i class="fas fa-store"></i>Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-th-large"></i>Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-phone"></i>Contact</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+<!-- ====================contact============= -->
+<section class="contact-modern py-5" id="contact">
+    <div class="container">
+      <h2 class="text-center text-gold mb-4 animate-on-scroll">Contact Us</h2>
+      <p class="text-center text-light mb-5 animate-on-scroll">Reach out to us with any queries or feedback—we're here to help!</p>
+  
+      <div class="row justify-content-center">
+        <div class="col-lg-8 animate-on-scroll">
+          <form class="contact-form p-4 rounded-4">
+            <div class="form-floating mb-4 position-relative">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              <label for="name"><i class="bi bi-person me-2"></i>Your Name</label>
+            </div>
+            <div class="form-floating mb-4 position-relative">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              <label for="email"><i class="bi bi-envelope me-2"></i>Your Email</label>
+            </div>
+            <div class="form-floating mb-4 position-relative">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+              <label for="subject"><i class="bi bi-chat-dots me-2"></i>Subject</label>
+            </div>
+            <div class="form-floating mb-4 position-relative">
+              <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px;" required></textarea>
+              <label for="message"><i class="bi bi-pencil-square me-2"></i>Your Message</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-gold px-5 py-2 rounded-pill mt-2">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+<!-- =======================footer=============== -->
+
+<footer class="footer bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-gold">MadeForYou</h5>
+          <p>Your one-stop shop for personalized photo frames, custom eyewear, and more! We believe in bringing a personal touch to every product.</p>
+        </div>
+        
+        <!-- Links Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-gold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Home</a></li>
+            <li><a href="#" class="text-light">Shop</a></li>
+            <li><a href="#" class="text-light">Category</a></li>
+            <li><a href="#" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-gold">Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Copyright Section -->
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 MadeForYou. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
+
+    
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
