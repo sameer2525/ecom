@@ -108,11 +108,23 @@
   }
   
   .card.product-card {
-    border: none;
+    border: solid 2px black;
     border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .card.product-card img {
+    width: 370px;
+    height: 350px;
+  }
+
+
+  
   
   .card.product-card:hover {
     transform: translateY(-8px);
