@@ -112,7 +112,6 @@
     border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
-    gap: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
